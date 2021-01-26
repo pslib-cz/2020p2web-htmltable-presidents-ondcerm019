@@ -17,17 +17,18 @@
       table {border-collapse: collapse;}
       thead {border-bottom: solid black;}
       tfoot {border-top: solid black;}
-      .bezpr {color: gray;}
+      .bezpr td {color: gray;}
     </style>
   </head>
   <body>
     <table class="presidents">
       <caption>Seznam prezidentů ČR a SR od roku 1989</caption>
-
-      <col span="2" class="roky">
-      <col class="cr">
-      <col class="sr">
-
+      <colgroup>
+        <col span="2" class="roky">
+        <col class="cr">
+        <col class="sr">
+        <col>
+      </colgroup>
       <thead>
         <tr>
           <th>Od</th>
@@ -68,11 +69,11 @@
             <td>Michal Kováč</td>
             <td></td>
           </tr>
-          <tr>
+          <tr class="bezpr">
             <th>1998</th>
             <th>1999</th>
-            <td class="bezpr">bez prezidenta</td>
-            <td class="bezpr">Na Slovensku v této době byli pověřeni prezidentskými pravomocemi tehdejší premiéři</td>
+            <td>bez prezidenta</td>
+            <td>Na Slovensku v této době byli pověřeni prezidentskými pravomocemi tehdejší premiéři</td>
           </tr>
           <tr>
             <th>1999</th>
